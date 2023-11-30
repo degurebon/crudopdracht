@@ -14,7 +14,7 @@ integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6
       <a class="navbar-brand h1" href={{ route('posts.index') }}>CRUDopdracht</a>
       <div class="justify-end ">
         <div class="col ">
-          <a class="btn btn-sm btn-success" href={{ route('posts.create') }}>Add Post</a>
+          <a class="btn btn-sm btn-success" href={{ route('posts.create') }}>Add Post :)</a>
         </div>
       </div>
     </div>
