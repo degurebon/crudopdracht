@@ -31,6 +31,9 @@ Route::put('/posts/{post}', PostController::class .'@update')->name('posts.updat
 // deletes a post
 Route::delete('/posts/{post}', PostController::class .'@destroy')->name('posts.destroy');
 
+//home
+Route::view('/welcome', 'home');
+
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
