@@ -15,20 +15,30 @@ use App\Http\Controllers\PostController;
 |
 */
 
+// Route::get('/home', function () { return view('home');});
+
 // returns the home page with all posts
-Route::get('/', PostController::class .'@index')->name('posts.index');
+Route::get('/crud', PostController::class .'@index')->name('posts.index');
 // returns the form for adding a post
-Route::get('/posts/create', PostController::class . '@create')->name('posts.create');
+Route::get('/posts/create', PostController::class . '@create')->middleware(['auth', 'verified'])->name('posts.create');
 // adds a post to the database
-Route::post('/posts', PostController::class .'@store')->name('posts.store');
+Route::post('/posts', PostController::class .'@store')->middleware(['auth', 'verified'])->name('posts.store');
 // returns a page that shows a full post
 Route::get('/posts/{post}', PostController::class .'@show')->name('posts.show');
 // returns the form for editing a post
-Route::get('/posts/{post}/edit', PostController::class .'@edit')->name('posts.edit');
+Route::get('/posts/{post}/edit', PostController::class .'@edit')->middleware(['auth', 'verified'])->name('posts.edit');
 // updates a post
-Route::put('/posts/{post}', PostController::class .'@update')->name('posts.update');
+Route::put('/posts/{post}', PostController::class .'@update')->middleware(['auth', 'verified'])->name('posts.update');
 // deletes a post
-Route::delete('/posts/{post}', PostController::class .'@destroy')->name('posts.destroy');
+Route::delete('/posts/{post}', PostController::class .'@destroy')->middleware(['auth', 'verified'])->name('posts.destroy');
+
+Route::get('/', function () {
+    return view('unauthdash');
+})->name('unauthdash');
+
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
