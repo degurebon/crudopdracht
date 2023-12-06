@@ -26,11 +26,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -54,7 +51,7 @@
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-pf col-sm-6 mb-4">
                 <!-- Portfolio item 1-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -69,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-pf col-sm-6 mb-4">
                 <!-- Portfolio item 2-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
@@ -84,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-pf col-sm-6 mb-4">
                 <!-- Portfolio item 3-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
@@ -99,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <div class="col-lg-pf col-sm-6 mb-4 mb-lg-0">
                 <!-- Portfolio item 4-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
@@ -114,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <div class="col-lg-pf col-sm-6 mb-4 mb-sm-0">
                 <!-- Portfolio item 5-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
@@ -129,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-pf col-sm-6">
                 <!-- Portfolio item 6-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
@@ -148,6 +145,60 @@
     </div>
 </section>
 
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./img/team/adam.png" alt="..." />
+                    <h4>Adam</h4>
+                    <p class="text-muted">Back-End Developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Adam Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Adam Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Adam LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./img/team/benjamin.png" alt="..." />
+                    <h4>Benjamin</h4>
+                    <p class="text-muted">Back-End Developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Benjamin Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Benjamin Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Benjamin LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./img/team/elise.jpg" alt="..." />
+                    <h4>Elise</h4>
+                    <p class="text-muted">Front-End Developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Elise Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Elise Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Elise LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./img/team/jonah.png" alt="..." />
+                    <h4>Jonah</h4>
+                    <p class="text-muted">Presenter</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Jonah Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Jonah Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Jonah LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+        </div>
+    </div>
+</section>
 
 <!-- Portfolio Modals-->
 <!-- Portfolio item 1 modal popup-->
