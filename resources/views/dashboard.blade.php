@@ -1,11 +1,12 @@
 <x-app-layout>
+<link href="./css/styles.css" rel="stylesheet" />
     <!-- Portfolio Grid-->
 <section class="page-section bg-light" id="portfolio">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            <a class="btn btn-sm btn-success" href="{{ route('posts.create') }}">Add Post</a>
+            <h2 class="section-heading text-uppercase">Dashboard</h2>
+            <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            <a class="btn btn-sm btn-success mb-5" href="{{ route('posts.create') }}">Add Post</a>
         </div>
         <div class="row">
         @foreach ($posts as $post)

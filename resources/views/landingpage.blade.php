@@ -1,36 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Harmen's haarlijn</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> Font Awesome icons (free version)
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./css/styles.css" rel="stylesheet" />
-</head>
-<body id="page-top"> 
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="#page-top"><img src="./img/navbar-logo.svg" alt="..." /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <x-unauth-layout>
 
@@ -41,7 +8,6 @@
         <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
     </div>
 </header>
-
 <!-- Portfolio Grid-->
 <section class="page-section bg-light" id="portfolio">
     <div class="container">
@@ -57,10 +23,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/1.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Threads</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Illustration</div>
                     </div>
                 </div>
@@ -72,10 +38,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/2.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Explore</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
                     </div>
                 </div>
@@ -87,10 +53,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/3.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Finish</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Identity</div>
                     </div>
                 </div>
@@ -102,10 +68,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/4.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Lines</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Branding</div>
                     </div>
                 </div>
@@ -117,10 +83,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/5.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Southwest</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Website Design</div>
                     </div>
                 </div>
@@ -132,10 +98,10 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/portfolio/6.jpg" alt="..." />
+                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Window</div>
+                        <div class="portfolio-caption-heading">Haarlijn</div>
                         <div class="portfolio-caption-subheading text-muted">Photography</div>
                     </div>
                 </div>
