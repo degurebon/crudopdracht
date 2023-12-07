@@ -11,10 +11,23 @@ class PostController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+
+  // public function index()
+  // {
+  //   $posts = Post::all();
+  //   return view('posts.index', compact('posts'));
+  // }
+
+  public function dash()
   {
     $posts = Post::all();
-    return view('posts.index', compact('posts'));
+    return view('dashboard', compact('posts'));
+  }
+
+  public function landing()
+  {
+    $posts = Post::all();
+    return view('landingpage', compact('posts'));
   }
   /**
    * Store a newly created resource in storage.
@@ -29,7 +42,7 @@ class PostController extends Controller
       'body' => 'required',
     ]);
     Post::create($request->all());
-    return redirect()->route('posts.index')
+    return redirect()->route('dashboard')
       ->with('success', 'Post created successfully.');
   }
   /**
@@ -47,7 +60,7 @@ class PostController extends Controller
     ]);
     $post = Post::find($id);
     $post->update($request->all());
-    return redirect()->route('posts.index')
+    return redirect()->route('dashboard')
       ->with('success', 'Post updated successfully.');
   }
   /**
@@ -60,7 +73,7 @@ class PostController extends Controller
   {
     $post = Post::find($id);
     $post->delete();
-    return redirect()->route('posts.index')
+    return redirect()->route('dashboard')
       ->with('success', 'Post deleted successfully');
   }
   // routes functions

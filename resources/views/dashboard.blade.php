@@ -1,17 +1,45 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
+    <!-- Portfolio Grid-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <a class="btn btn-sm btn-success" href="{{ route('posts.create') }}">Add Post</a>
+        </div>
+        <div class="row">
+        @foreach ($posts as $post)
+            <div class="col-lg-pf col-sm-6 mb-4">
+                <!-- Portfolio items-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="./img/portfolio/1.jpg" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{ $post->title }}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{ $post->body }}</div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-sm">
+                                <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                </div>
+                                <div class="col-sm">
+                                    <form action="{{ route('posts.destroy', $post->id) }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        @endforeach
         </div>
     </div>
+</section>
 </x-app-layout>

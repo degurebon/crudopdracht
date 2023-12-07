@@ -33,7 +33,7 @@
     </div>
 </nav> -->
 
-<x-app-layout>
+<x-unauth-layout>
 
 <!-- Masthead-->
 <header class="masthead">
@@ -423,4 +423,4 @@
 <!-- </body>
 </html> -->
 
-</x-app-layout>
+</x-unauth-layout>

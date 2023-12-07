@@ -18,7 +18,7 @@ use App\Http\Controllers\PostController;
 // Route::get('/home', function () { return view('home');});
 
 // returns the home page with all posts
-Route::get('/crud', PostController::class .'@index')->name('posts.index');
+// Route::get('/dashboard', PostController::class .'@index')->name('dashboard.index');
 // returns the form for adding a post
 Route::get('/posts/create', PostController::class . '@create')->middleware(['auth', 'verified'])->name('posts.create');
 // adds a post to the database
@@ -32,17 +32,15 @@ Route::put('/posts/{post}', PostController::class .'@update')->middleware(['auth
 // deletes a post
 Route::delete('/posts/{post}', PostController::class .'@destroy')->middleware(['auth', 'verified'])->name('posts.destroy');
 
-Route::get('/', function () {
-    return view('unauthdash');
-})->name('unauthdash');
+// Route::get('/', function () {
+//     return view('unauthdash');
+// })->name('unauthdash');
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/', PostController::class .'@landing')
+->name('/');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', PostController::class .'@dash')
+->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
