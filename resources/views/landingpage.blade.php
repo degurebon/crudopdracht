@@ -7,7 +7,7 @@
             <div class="masthead-heading text-uppercase">Cheesed to meet you</div>
         </div>
     </header>
-    <!-- Portfolio Grid-->
+    <!-- Portfolio Grids-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
