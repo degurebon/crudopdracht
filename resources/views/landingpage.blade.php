@@ -42,7 +42,7 @@
                 <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/adam.png" alt="..."/>
                         <h4>Adam</h4>
@@ -55,7 +55,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/benjamin.png" alt="..."/>
                         <h4>Benjamin</h4>
@@ -68,7 +68,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/elise.jpg" alt="..."/>
                         <h4>Elise</h4>
@@ -81,7 +81,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/jonah.png" alt="..."/>
                         <h4>Jonah</h4>
