@@ -15,8 +15,6 @@ use App\Http\Controllers\PostController;
 |
 */
 
-// Route::get('/home', function () { return view('home');});
-
 // returns the home page with all posts
 // Route::get('/dashboard', PostController::class .'@index')->name('dashboard.index');
 // returns the form for adding a post
@@ -31,10 +29,6 @@ Route::get('/posts/{post}/edit', PostController::class .'@edit')->middleware(['a
 Route::put('/posts/{post}', PostController::class .'@update')->middleware(['auth', 'verified'])->name('posts.update');
 // deletes a post
 Route::delete('/posts/{post}', PostController::class .'@destroy')->middleware(['auth', 'verified'])->name('posts.destroy');
-
-// Route::get('/', function () {
-//     return view('unauthdash');
-// })->name('unauthdash');
 
 Route::get('/', PostController::class .'@landing')
 ->name('/');
