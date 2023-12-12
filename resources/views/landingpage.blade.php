@@ -22,7 +22,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="./img/portfolio/1.jpg" alt="..."/>
+                                <img class="img-fluid w-100" src="./img/harmen.jpg" alt="..."/>
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">{{ $post->title }}</div>
@@ -42,7 +42,7 @@
                 <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/adam.png" alt="..."/>
                         <h4>Adam</h4>
@@ -55,7 +55,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/benjamin.png" alt="..."/>
                         <h4>Benjamin</h4>
@@ -68,7 +68,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/elise.jpg" alt="..."/>
                         <h4>Elise</h4>
@@ -81,7 +81,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="./img/team/jonah.png" alt="..."/>
                         <h4>Jonah</h4>
@@ -113,7 +113,7 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">{{ $post->title }}</p>
-                                <img class="img-fluid d-block mx-auto" src="./img/portfolio/1.jpg" alt="..."/>
+                                <img class="img-fluid d-block mx-auto" src="./img/harmen.jpg" alt="..."/>
                                 <p>{{ $post->body }}</p>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                         type="button">
