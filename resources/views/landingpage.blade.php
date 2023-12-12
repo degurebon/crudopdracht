@@ -22,7 +22,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="./img/portfolio/1.jpg" alt="..."/>
+                                <img class="img-fluid w-100" src="./img/harmen.jpg" alt="..."/>
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">{{ $post->title }}</div>
@@ -113,7 +113,7 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">{{ $post->title }}</p>
-                                <img class="img-fluid d-block mx-auto" src="./img/portfolio/1.jpg" alt="..."/>
+                                <img class="img-fluid d-block mx-auto" src="./img/harmen.jpg" alt="..."/>
                                 <p>{{ $post->body }}</p>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                         type="button">
