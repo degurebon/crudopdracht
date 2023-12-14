@@ -17,7 +17,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="./img/harmen.jpg" alt="..." />
+                        <img class="img-fluid w-100" src="./img/harmen.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{{ $post->title }}</div>

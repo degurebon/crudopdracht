@@ -3,7 +3,7 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <div class="masthead-subheading">Harmens haarlijn corp.</div>
+            <div class="masthead-subheading">Harmen's haarlijn corp.</div>
             <div class="masthead-heading text-uppercase">Cheesed to meet you</div>
         </div>
     </header>

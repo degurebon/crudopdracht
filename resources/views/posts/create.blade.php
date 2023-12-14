@@ -31,5 +31,6 @@
         </form>
       </div>
     </div>
+    <a href="/dashboard" class="btn btn-danger" role="button" aria-pressed="true">Back</a>
   </div>
 </html>
