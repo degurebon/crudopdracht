@@ -1,9 +1,9 @@
 <x-unauth-layout>
-
+    <link href="./css/styles.css" rel="stylesheet" />
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <div class="masthead-subheading">Harmen's haarlijn corp.</div>
+            <div class="masthead-subheading">Harmens haarlijn corp.</div>
             <div class="masthead-heading text-uppercase">Cheesed to meet you</div>
         </div>
     </header>
@@ -101,45 +101,31 @@
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
     @foreach ($posts as $post)
-    <div class="portfolio-modal modal fade" id="modalid{{ $post->id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="./img/close-icon.svg" alt="Close modal"/>
-                </div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">{{ $post->title }}</p>
-                                <img class="img-fluid d-block mx-auto" src="./img/harmen.jpg" alt="..."/>
-                                <p>{{ $post->body }}</p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                        type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
+        <div class="portfolio-modal modal fade" id="modalid{{ $post->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="./img/close-icon.svg" alt="Close modal"/>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">{{ $post->title }}</p>
+                                    <img class="img-fluid d-block mx-auto" src="./img/harmen.jpg" alt="..."/>
+                                    <p>{{ $post->body }}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                            type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     @endforeach
-    <!-- Portfolio item 2 modal popup-->
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="./js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <!-- </body>
-    </html> -->
-
 </x-unauth-layout>

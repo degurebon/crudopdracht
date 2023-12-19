@@ -40,8 +40,18 @@ class PostController extends Controller
     $request->validate([
       'title' => 'required|max:255',
       'body' => 'required',
+      'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
     ]);
     Post::create($request->all());
+
+      if ($image = $request->file('image')) {
+          $destinationPath = 'images/';
+          $postImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+          $image->move($destinationPath, $postImage);
+          $input['image'] = "$postImage";
+      }
+
+      Post::create($input);
     return redirect()->route('dashboard')
       ->with('success', 'Post created successfully.');
   }
